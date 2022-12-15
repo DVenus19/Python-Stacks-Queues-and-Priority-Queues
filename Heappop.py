@@ -7,3 +7,4 @@ print("The fruits are: ", fruits)
 
 from heapq import heappop
 heappop(fruits)
+print("The fruits that still available are : ", fruits)
