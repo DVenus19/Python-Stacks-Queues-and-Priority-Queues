@@ -11,5 +11,6 @@ class IterableMixin:
             yield self.dequeue()
 
 class Queue(IterableMixin):
+    def __init__(self, *elements):
 
 
