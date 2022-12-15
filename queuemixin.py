@@ -34,6 +34,8 @@ class Stack(Queue):
 class PriorityQueue(IterableMixin):
     def __init__(self):
         self._elements = []
+        self._elements = count()
+
 
 
 
