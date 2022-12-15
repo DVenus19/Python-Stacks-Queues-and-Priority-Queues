@@ -12,11 +12,11 @@ class Queue:
         while len(self) > 0:
             yield self.dequeue()
 
-   def enqueue(self, element):
-        self._elements.append(element)
+    def enqueue(self, element):
+       self._elements.append(element)
 
     def dequeue(self):
-        return self._elements.popleft()
+       return self._elements.popleft()
 
 class Stack(Queue):
     def dequeue(self):
@@ -30,3 +30,4 @@ class PriorityQueue:
         heappush(self._elements, (priority,value))
 
     def dequeue(self):
+        return heappop(self._elements)
