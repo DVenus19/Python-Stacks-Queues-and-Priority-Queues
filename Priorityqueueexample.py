@@ -7,3 +7,4 @@ NEUTRAL = 1
 messages = PriorityQueue()
 messages.enqueue_with_priority(IMPORTANT, "Windshield wipers turned on")
 messages.enqueue_with_priority(NEUTRAL, "Radio station tuned in")
+messages.enqueue_with_priority(CRITICAL, "Brake pedal depressed")
