@@ -24,6 +24,7 @@ class Stack(Queue)
 
 class PriorityQueue:
     def __init__(self):
+        self._elements = []
 
 
 
