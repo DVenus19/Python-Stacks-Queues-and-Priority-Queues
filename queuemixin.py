@@ -21,5 +21,7 @@ class Queue(IterableMixin):
         while len(self) > 0:
             yield self.dequeue()
 
+    def enqueue(self, element):
+
 
 
