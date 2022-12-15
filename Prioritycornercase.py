@@ -28,6 +28,9 @@ class PriorityQueue:
         self._elements = []
         self._counter = count()
 
+    def enqueue_with_priority(self, priority,value):
+        element = (-priority, next(self._counter),value)
+
 
 
 
