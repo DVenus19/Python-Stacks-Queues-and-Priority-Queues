@@ -5,4 +5,4 @@ class Queue:
         self._elements = deque(elements)
 
     def __len__(self):
-        return
+        return len(self._elements)
