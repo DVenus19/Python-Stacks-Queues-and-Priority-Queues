@@ -32,6 +32,8 @@ class Stack(Queue):
         return self._elements.pop()
 
 class PriorityQueue(IterableMixin):
+    def __init__(self):
+        self._elements = []
 
 
 
