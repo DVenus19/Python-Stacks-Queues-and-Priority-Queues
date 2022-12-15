@@ -15,3 +15,4 @@ class Queue:
         self._elements.append(element)
 
     def dequeue(self):
+        return self._elements.popleft()
