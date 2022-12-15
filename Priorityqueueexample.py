@@ -5,3 +5,4 @@ IMPORTANT = 2
 NEUTRAL = 1
 
 messages = PriorityQueue()
+messages.enqueue_with_priority(IMPORTANT, "Windshield wipers turned on")
