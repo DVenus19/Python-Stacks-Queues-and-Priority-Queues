@@ -12,3 +12,6 @@ class Queue:
             yield self.dequeue()
 
     def enqueue(self,element):
+        self._elements.append(element)
+
+    def dequeue(self):
