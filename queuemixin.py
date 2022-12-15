@@ -8,4 +8,5 @@ class IterableMixin:
 
     def __iter__(self):
         while len(self) >0:
+            yield self.dequeue()
 
