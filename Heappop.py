@@ -4,3 +4,5 @@ heappush(fruits, "orange")
 heappush(fruits, "apple")
 heappush(fruits, "banana")
 print("The fruits are: ", fruits)
+
+from heapq import heappop
