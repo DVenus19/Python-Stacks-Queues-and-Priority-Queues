@@ -22,6 +22,7 @@ class Queue(IterableMixin):
             yield self.dequeue()
 
     def enqueue(self, element):
+        self._elements.append(element)
 
 
 
