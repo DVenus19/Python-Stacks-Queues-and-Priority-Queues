@@ -12,5 +12,6 @@ class IterableMixin:
 
 class Queue(IterableMixin):
     def __init__(self, *elements):
+        self._elements = deque(elements)
 
 
