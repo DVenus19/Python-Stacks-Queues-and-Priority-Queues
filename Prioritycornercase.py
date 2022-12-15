@@ -20,6 +20,7 @@ class Queue:
         return self._elements.popleft()
 
 class Stack(Queue):
+    def dequeue(self):
 
 
 
