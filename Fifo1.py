@@ -5,5 +5,4 @@ print("The numbers of queues is ", len(fifo))
 
 for element in fifo:
     print(element)
-
     print("the number of current queues is ", len(fifo))
