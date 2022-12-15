@@ -10,3 +10,6 @@ class IterableMixin:
         while len(self) >0:
             yield self.dequeue()
 
+class Queue(IterableMixin):
+
+
