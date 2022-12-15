@@ -9,5 +9,5 @@ class Queue:
         return len(self._elements)
 
     def __iter__(self):
-        while
+        while len(self) > 0:
 
