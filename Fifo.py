@@ -6,3 +6,5 @@ fifo.enqueue("3rd")
 
 fifo.dequeue()
 print(fifo)
+fifo.dequeue()
+print(fifo)
