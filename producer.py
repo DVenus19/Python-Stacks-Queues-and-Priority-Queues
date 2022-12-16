@@ -1,0 +1,1 @@
+from kafka3 import KafkaProducer
