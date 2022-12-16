@@ -4,4 +4,6 @@ from queueMixin import Queue
 
 class City(NamedTuple):
     name: str
+    country: str
+    year: int
 
