@@ -108,3 +108,7 @@ def recursive_depth_first_traverse(graph, source, order_by=None):
     return visit(source)
 
 def depth_first_search(graph, source, predicate, order_by=None):
+    return search(depth_first_traverse, graph, source, predicate, order_by)
+
+
+def search(traverse, graph, source, predicate, order_by=None):
