@@ -12,3 +12,4 @@ class City(NamedTuple):
     @classmethod
     def from_dict(cls, attrs):
         return cls(
+            name=attrs["xlabel"],
