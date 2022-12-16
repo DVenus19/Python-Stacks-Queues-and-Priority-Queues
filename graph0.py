@@ -1,7 +1,6 @@
 from typing import NamedTuple
 import networkx as nx
 
-
 class City(NamedTuple):
     name: str
     country: str
@@ -18,7 +17,6 @@ class City(NamedTuple):
             latitude=float(attrs["latitude"]),
             longitude=float(attrs["longitude"]),
         )
-
 
 def load_graph(filename, node_factory):
     graph = nx.nx_agraph.read_dot(filename)
