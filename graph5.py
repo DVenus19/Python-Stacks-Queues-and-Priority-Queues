@@ -105,3 +105,6 @@ def recursive_depth_first_traverse(graph, source, order_by=None):
             if neighbor not in visited:
                 yield from visit(neighbor)
 
+    return visit(source)
+
+def depth_first_search(graph, source, predicate, order_by=None):
