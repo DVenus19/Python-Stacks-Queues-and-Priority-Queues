@@ -64,3 +64,9 @@ def shortest_path(graph, source, destination, order_by=None):
 def retrace(previous, source, destination):
     path = deque()
 
+    current = destination
+    while current != source:
+        path.appendleft(current)
+        current = previous.get(current)
+        if current is None:
+            return None
