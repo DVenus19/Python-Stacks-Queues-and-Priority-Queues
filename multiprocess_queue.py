@@ -22,4 +22,5 @@ def reverse_md5(hash_value, alphabet=ascii_lowercase, max_length=6):
         def chunk_indices(length, num_chunks):
             start = 0
             while num_chunks > 0:
-
+                num_chunks = min(num_chunks, length)
+                chunk_size = round(length / num_chunks)
