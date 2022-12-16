@@ -7,3 +7,5 @@ class City(NamedTuple):
     country: str
     year: int
     latitude: float
+    longitude: float
+
