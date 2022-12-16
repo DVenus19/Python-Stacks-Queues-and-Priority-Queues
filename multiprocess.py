@@ -27,3 +27,6 @@ def chunk_indices(length, num_chunks):
         yield start, (start := start + chunk_size)
         length -= chunk_size
         num_chunks -= 1
+
+def reverse_md5(hash_value, alphabet=ascii_lowercase, max_length=6):
+
