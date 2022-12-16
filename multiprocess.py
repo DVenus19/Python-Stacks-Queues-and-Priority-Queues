@@ -38,4 +38,6 @@ def reverse_md5(hash_value, alphabet=ascii_lowercase, max_length=6):
 
 class Combinations:
     def __init__(self, alphabet, length):
+        self.alphabet = alphabet
+        self.length = length
 
