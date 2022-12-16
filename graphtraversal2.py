@@ -9,3 +9,6 @@ city2 = nodes["perth"]
 
 for i, path in enumerate(nx.all_shortest_paths(graph, city1, city2), 1):
     print(f"{i}.", " → ".join(city.name for city in path))
+
+
+str = " → "
