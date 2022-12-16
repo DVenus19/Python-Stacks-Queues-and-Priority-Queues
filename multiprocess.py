@@ -36,4 +36,5 @@ def reverse_md5(hash_value, alphabet=ascii_lowercase, max_length=6):
             if hashed == hash_value:
                 return text_bytes.decode("utf-8")
 
+class Combinations:
 
