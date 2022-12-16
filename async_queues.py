@@ -81,3 +81,11 @@ def parse_links(url, html):
             yield urljoin(url, href)
 
 
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("url")
+    parser.add_argument("-d", "--max-depth", type=int, default=2)
+    parser.add_argument("-w", "--num-workers", type=int, default=3)
+    return parser.parse_args()
+
+
