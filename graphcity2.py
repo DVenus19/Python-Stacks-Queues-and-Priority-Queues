@@ -10,4 +10,6 @@ def order(neighbors):
         return city.latitude
     return iter(sorted(neighbors, key=by_latitude, reverse=True))
 
+for node in nx.bfs_tree(graph, nodes["edinburgh"], sort_neighbors=order):
+    print("📍", node.name)
 
