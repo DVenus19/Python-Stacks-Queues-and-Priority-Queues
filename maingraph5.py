@@ -8,3 +8,4 @@ from graph2 import (
 def is_twentieth_century(city):
     return city.year and 1901 <= city.year <= 2000
 
+nodes, graph = load_graph("roadmap.dot", City.from_dict)
