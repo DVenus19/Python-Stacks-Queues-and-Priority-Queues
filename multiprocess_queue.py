@@ -19,3 +19,5 @@ def reverse_md5(hash_value, alphabet=ascii_lowercase, max_length=6):
         if __name__ == "__main__":
             main()
 
+        def chunk_indices(length, num_chunks):
+
