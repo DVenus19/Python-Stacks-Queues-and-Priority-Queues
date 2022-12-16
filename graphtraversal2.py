@@ -12,3 +12,6 @@ for i, path in enumerate(nx.all_shortest_paths(graph, city1, city2), 1):
 
 
 str = " → "
+
+
+str.join(city.name for city in shortest_path(graph, city1, city2))
