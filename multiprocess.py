@@ -30,4 +30,6 @@ def chunk_indices(length, num_chunks):
 
 def reverse_md5(hash_value, alphabet=ascii_lowercase, max_length=6):
     for length in range(1, max_length + 1):
+        for combination in Combinations(alphabet, length):
+            text_bytes = "".join(combination).encode("utf-8")
 
