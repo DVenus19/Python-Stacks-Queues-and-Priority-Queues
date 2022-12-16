@@ -45,5 +45,8 @@ class Combinations:
     def __getitem__(self, index):
         if index >= len(self):
             raise IndexError
+        return "".join(
+            self.alphabet[
+                (index // len(self.alphabet) ** i) % len(self.alphabet)
+                ]
 
-        )
