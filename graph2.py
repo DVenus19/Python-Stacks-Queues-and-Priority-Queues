@@ -31,4 +31,5 @@ def load_graph(filename, node_factory):
 def breadth_first_traverse(graph, source):
     queue = Queue(source)
     visited = {source}
+    while queue:
 
