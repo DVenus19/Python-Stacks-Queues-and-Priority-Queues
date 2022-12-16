@@ -20,3 +20,6 @@ class City(NamedTuple):
         )
 
 
+def load_graph(filename, node_factory):
+    graph = nx.nx_agraph.read_dot(filename)
+    nodes = {
