@@ -49,4 +49,5 @@ class Combinations:
             self.alphabet[
                 (index // len(self.alphabet) ** i) % len(self.alphabet)
                 ]
-
+            for i in reversed(range(self.length))
+        )
