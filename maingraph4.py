@@ -6,3 +6,6 @@ def sort_by(neighbors, strategy):
 
 def by_distance(weights):
     return float(weights["distance"])
+
+
+for neighbor, weights in sort_by(graph[nodes["london"]], by_distance):
