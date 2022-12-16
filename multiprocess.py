@@ -43,3 +43,7 @@ class Combinations:
     def __len__(self):
         return len(self.alphabet) ** self.length
     def __getitem__(self, index):
+        if index >= len(self):
+            raise IndexError
+
+        )
