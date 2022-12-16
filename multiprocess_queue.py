@@ -26,3 +26,4 @@ def reverse_md5(hash_value, alphabet=ascii_lowercase, max_length=6):
                 chunk_size = round(length / num_chunks)
                 yield start, (start := start + chunk_size)
                 length -= chunk_size
+                num_chunks -= 1
