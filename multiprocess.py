@@ -24,4 +24,5 @@ def chunk_indices(length, num_chunks):
     while num_chunks > 0:
         num_chunks = min(num_chunks, length)
         chunk_size = round(length / num_chunks)
+        yield start, (start := start + chunk_size)
 
