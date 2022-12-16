@@ -9,3 +9,7 @@ class City(NamedTuple):
     year: int
     latitude: float
     longitude: float
+
+    @classmethod
+    def from_dict(cls, attrs):
+        return cls(
