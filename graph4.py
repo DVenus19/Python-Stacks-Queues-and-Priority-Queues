@@ -5,3 +5,5 @@ from collections import deque
 
 class City(NamedTuple):
     name: str
+    country: str
+    year: int
