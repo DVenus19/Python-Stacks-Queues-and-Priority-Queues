@@ -112,3 +112,6 @@ def depth_first_search(graph, source, predicate, order_by=None):
 
 
 def search(traverse, graph, source, predicate, order_by=None):
+    for node in traverse(graph, source, order_by):
+        if predicate(node):
+            return node
