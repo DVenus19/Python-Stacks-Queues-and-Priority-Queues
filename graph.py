@@ -4,5 +4,8 @@ class City(NamedTuple):
     country: str
     year: int | None
     latitude: float
+    longitude: float
+
+    @classmethod
 
 
