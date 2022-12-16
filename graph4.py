@@ -67,3 +67,7 @@ def retrace(previous, source, destination):
     current = destination
     while current != source:
         path.appendleft(current)
+        current = previous.get(current)
+        if current is None:
+            return None
+
