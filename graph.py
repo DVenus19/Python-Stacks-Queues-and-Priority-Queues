@@ -11,5 +11,7 @@ class City(NamedTuple):
         return cls(
             name=attrs["xlabel"],
             country=attrs["country"],
+            year=int(attrs["year"]) or None,
+
 
 
