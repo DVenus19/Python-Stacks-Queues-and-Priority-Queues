@@ -10,3 +10,5 @@ def is_twentieth_century(city):
 
 nodes, graph = load_graph("roadmap.dot", City.from_dict)
 city = bfs(graph, nodes["edinburgh"], is_twentieth_century)
+city.name
+
