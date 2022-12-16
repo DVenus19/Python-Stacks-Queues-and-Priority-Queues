@@ -25,3 +25,6 @@ def load_graph(filename, node_factory):
     nodes = {
         name: node_factory(attributes)
         for name, attributes in graph.nodes(data=True)
+    }
+    return nodes, nx.Graph(
+        (nodes[name1], nodes[name2], weights)
